@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3BCC14CB2C0C411B00BB8659 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BCC14CA2C0C411B00BB8659 /* Color.xcassets */; };
+		3BEEC60B2C0F35E500EB24C0 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEEC60A2C0F35E500EB24C0 /* MessageView.swift */; };
+		3BEEC60D2C0F35EF00EB24C0 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEEC60C2C0F35EF00EB24C0 /* NotificationView.swift */; };
+		3BEEC60F2C0F35FA00EB24C0 /* GrokView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEEC60E2C0F35FA00EB24C0 /* GrokView.swift */; };
+		3BEEC6112C0F360300EB24C0 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEEC6102C0F360300EB24C0 /* CommunityView.swift */; };
+		3BEEC6132C0F361900EB24C0 /* SerarchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEEC6122C0F361900EB24C0 /* SerarchView.swift */; };
+		3BEEC6162C0F44A000EB24C0 /* WhoToFolloewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEEC6152C0F44A000EB24C0 /* WhoToFolloewView.swift */; };
 		3BFC9B632C0C3CA800583A12 /* TwitterCloneAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFC9B622C0C3CA800583A12 /* TwitterCloneAppApp.swift */; };
 		3BFC9B652C0C3CA800583A12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFC9B642C0C3CA800583A12 /* ContentView.swift */; };
 		3BFC9B672C0C3CA900583A12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BFC9B662C0C3CA900583A12 /* Assets.xcassets */; };
@@ -42,6 +48,12 @@
 
 /* Begin PBXFileReference section */
 		3BCC14CA2C0C411B00BB8659 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		3BEEC60A2C0F35E500EB24C0 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		3BEEC60C2C0F35EF00EB24C0 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		3BEEC60E2C0F35FA00EB24C0 /* GrokView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrokView.swift; sourceTree = "<group>"; };
+		3BEEC6102C0F360300EB24C0 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		3BEEC6122C0F361900EB24C0 /* SerarchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerarchView.swift; sourceTree = "<group>"; };
+		3BEEC6152C0F44A000EB24C0 /* WhoToFolloewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoToFolloewView.swift; sourceTree = "<group>"; };
 		3BFC9B5F2C0C3CA800583A12 /* TwitterCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BFC9B622C0C3CA800583A12 /* TwitterCloneAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneAppApp.swift; sourceTree = "<group>"; };
 		3BFC9B642C0C3CA800583A12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +111,54 @@
 				3BFC9BA02C0C44CB00583A12 /* String */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		3BEEC6052C0F356100EB24C0 /* Serarch */ = {
+			isa = PBXGroup;
+			children = (
+				3BEEC6122C0F361900EB24C0 /* SerarchView.swift */,
+			);
+			path = Serarch;
+			sourceTree = "<group>";
+		};
+		3BEEC6062C0F357000EB24C0 /* Grok */ = {
+			isa = PBXGroup;
+			children = (
+				3BEEC60E2C0F35FA00EB24C0 /* GrokView.swift */,
+			);
+			path = Grok;
+			sourceTree = "<group>";
+		};
+		3BEEC6072C0F357B00EB24C0 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				3BEEC6102C0F360300EB24C0 /* CommunityView.swift */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		3BEEC6082C0F35C800EB24C0 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				3BEEC60C2C0F35EF00EB24C0 /* NotificationView.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		3BEEC6092C0F35D000EB24C0 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				3BEEC60A2C0F35E500EB24C0 /* MessageView.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		3BEEC6142C0F448400EB24C0 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				3BEEC6152C0F44A000EB24C0 /* WhoToFolloewView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 		3BFC9B562C0C3CA800583A12 = {
@@ -238,8 +298,13 @@
 		3BFC9B9A2C0C436E00583A12 /* MainTab */ = {
 			isa = PBXGroup;
 			children = (
-				3BFC9BA32C0C4FEE00583A12 /* Home */,
 				3BFC9B9B2C0C439A00583A12 /* MainTab.swift */,
+				3BEEC6092C0F35D000EB24C0 /* Message */,
+				3BEEC6082C0F35C800EB24C0 /* Notification */,
+				3BEEC6062C0F357000EB24C0 /* Grok */,
+				3BEEC6072C0F357B00EB24C0 /* Community */,
+				3BEEC6052C0F356100EB24C0 /* Serarch */,
+				3BFC9BA32C0C4FEE00583A12 /* Home */,
 			);
 			path = MainTab;
 			sourceTree = "<group>";
@@ -255,6 +320,7 @@
 		3BFC9BA32C0C4FEE00583A12 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3BEEC6142C0F448400EB24C0 /* Component */,
 				3BFC9BA42C0C501900583A12 /* HomeView.swift */,
 			);
 			path = Home;
@@ -393,12 +459,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BFC9BA22C0C44DD00583A12 /* StringUtils.swift in Sources */,
+				3BEEC60F2C0F35FA00EB24C0 /* GrokView.swift in Sources */,
 				3BFC9BA52C0C501900583A12 /* HomeView.swift in Sources */,
 				3BFC9B6C2C0C3CA900583A12 /* Persistence.swift in Sources */,
 				3BFC9B6F2C0C3CA900583A12 /* TwitterCloneApp.xcdatamodeld in Sources */,
+				3BEEC6162C0F44A000EB24C0 /* WhoToFolloewView.swift in Sources */,
+				3BEEC6112C0F360300EB24C0 /* CommunityView.swift in Sources */,
+				3BEEC60B2C0F35E500EB24C0 /* MessageView.swift in Sources */,
+				3BEEC6132C0F361900EB24C0 /* SerarchView.swift in Sources */,
 				3BFC9B652C0C3CA800583A12 /* ContentView.swift in Sources */,
 				3BFC9B632C0C3CA800583A12 /* TwitterCloneAppApp.swift in Sources */,
 				3BFC9B9C2C0C439A00583A12 /* MainTab.swift in Sources */,
+				3BEEC60D2C0F35EF00EB24C0 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
