@@ -23,6 +23,7 @@ struct MainTab: View {
             /// タブの構築
             confugureTab()
         }
+        .background(.clear)
         .ignoresSafeArea(edges: .bottom)
     }
     
@@ -66,10 +67,10 @@ struct MainTab: View {
             }
         }
         .padding()
-        .background(Material.ultraThin)
+        .background(Material.ultraThinMaterial)
         .background(.black.opacity(0.5))
-        .cornerRadius(10)
-        .shadow(radius: 2)
+        .ignoresSafeArea(edges: .all)
+        
     }
 }
 

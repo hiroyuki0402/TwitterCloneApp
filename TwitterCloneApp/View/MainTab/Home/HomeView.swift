@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject private var homeViewModel = HomeViewModel()
+    
     var body: some View {
         ScrollView(.vertical) {
-            VStack {
+            LazyVStack {
+                ForEach(homeViewModel.whoToFollowData, id: \.self) { data in
+                    WhoToFolloewView(whoToFollowData: data)
+                }
 
-                Text("ssss")
                 
             }
         }
@@ -39,8 +43,6 @@ struct HomeView: View {
                 .clipShape(Circle())
                 .padding(.horizontal, 10)
                 .padding(.bottom, 50)
-
-            
         }
     }
 }
