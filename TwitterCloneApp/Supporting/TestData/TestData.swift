@@ -7,7 +7,11 @@
 
 import Foundation
 
-class TestData {
+class TestData {}
+
+// MARK: - WhoToFollowData
+extension TestData {
+    ///  単一
     class func whoToFollowTestData() -> WhoToFollowData {
         return .init(
             userID: "@TestID",
@@ -16,6 +20,7 @@ class TestData {
             imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSei1q6rbNdGI9ZPeD88-DKm9gskfjy8NTMQ&s")
     }
     
+    /// 配列
     class func whoToFollowTestDatas() -> [WhoToFollowData] {
         return [
             .init(userID: "@TestID1", nickName: "TestUser1", message: "messagemessagemessagemessagemessageme", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSei1q6rbNdGI9ZPeD88-DKm9gskfjy8NTMQ&s"),

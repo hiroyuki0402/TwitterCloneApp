@@ -12,19 +12,22 @@ struct MainTab: View {
     /// 選択したタブ
     @State private var selectedTab: TabItem = .home
     
-    // MARK: - ライフサイクル
+    // MARK: - ボディー
     var body: some View {
-        VStack {
-            /// タブの遷移先
-            contentView(for: selectedTab)
-            
-            Spacer()
-            
-            /// タブの構築
-            confugureTab()
+        NavigationStack {
+            VStack {
+                /// タブの遷移先
+                contentView(for: selectedTab)
+                
+                Spacer()
+                
+                /// タブの構築
+                confugureTab()
+            }
+            .background(.clear)
+            .ignoresSafeArea(edges: .bottom)
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .background(.clear)
-        .ignoresSafeArea(edges: .bottom)
     }
     
     // MARK: - メソッド
@@ -35,14 +38,19 @@ struct MainTab: View {
         switch tab {
         case .home:
             HomeView()
+            
         case .serarch:
             SerarchView()
+            
         case .grok:
             GrokView()
+            
         case .community:
             CommunityView()
+            
         case .notification:
             NotificationView()
+            
         case .message:
             MessageView()
         }
@@ -70,7 +78,6 @@ struct MainTab: View {
         .background(Material.ultraThinMaterial)
         .background(.black.opacity(0.5))
         .ignoresSafeArea(edges: .all)
-        
     }
 }
 
