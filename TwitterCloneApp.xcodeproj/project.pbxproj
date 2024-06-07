@@ -18,6 +18,8 @@
 		3BEEC61C2C11D78A00EB24C0 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEEC61B2C11D78A00EB24C0 /* TestData.swift */; };
 		3BEEC6202C11DA6600EB24C0 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEEC61F2C11DA6600EB24C0 /* MyLibrary */; };
 		3BEEC6222C11DABC00EB24C0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEEC6212C11DABC00EB24C0 /* HomeViewModel.swift */; };
+		3BEEC6242C133E1400EB24C0 /* HeaderTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEEC6232C133E1400EB24C0 /* HeaderTabView.swift */; };
+		3BEEC6272C133F0B00EB24C0 /* WidthSetterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEEC6262C133F0B00EB24C0 /* WidthSetterModifier.swift */; };
 		3BFC9B632C0C3CA800583A12 /* TwitterCloneAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFC9B622C0C3CA800583A12 /* TwitterCloneAppApp.swift */; };
 		3BFC9B672C0C3CA900583A12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BFC9B662C0C3CA900583A12 /* Assets.xcassets */; };
 		3BFC9B6A2C0C3CA900583A12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BFC9B692C0C3CA900583A12 /* Preview Assets.xcassets */; };
@@ -58,6 +60,8 @@
 		3BEEC6182C11D6CF00EB24C0 /* WhoToFollowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoToFollowData.swift; sourceTree = "<group>"; };
 		3BEEC61B2C11D78A00EB24C0 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		3BEEC6212C11DABC00EB24C0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		3BEEC6232C133E1400EB24C0 /* HeaderTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTabView.swift; sourceTree = "<group>"; };
+		3BEEC6262C133F0B00EB24C0 /* WidthSetterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidthSetterModifier.swift; sourceTree = "<group>"; };
 		3BFC9B5F2C0C3CA800583A12 /* TwitterCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BFC9B622C0C3CA800583A12 /* TwitterCloneAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneAppApp.swift; sourceTree = "<group>"; };
 		3BFC9B662C0C3CA900583A12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				3BEEC6152C0F44A000EB24C0 /* WhoToFolloewView.swift */,
+				3BEEC6232C133E1400EB24C0 /* HeaderTabView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -187,6 +192,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		3BEEC6252C133EDD00EB24C0 /* Modifire */ = {
+			isa = PBXGroup;
+			children = (
+				3BEEC6262C133F0B00EB24C0 /* WidthSetterModifier.swift */,
+			);
+			path = Modifire;
+			sourceTree = "<group>";
+		};
 		3BFC9B562C0C3CA800583A12 = {
 			isa = PBXGroup;
 			children = (
@@ -210,10 +223,10 @@
 		3BFC9B612C0C3CA800583A12 /* TwitterCloneApp */ = {
 			isa = PBXGroup;
 			children = (
-				3BEEC61D2C11DA2D00EB24C0 /* ViewModel */,
-				3BEEC6172C11D6AB00EB24C0 /* Model */,
 				3BFC9B962C0C3E7600583A12 /* App */,
+				3BEEC6172C11D6AB00EB24C0 /* Model */,
 				3BFC9B922C0C3DDD00583A12 /* View */,
+				3BEEC61D2C11DA2D00EB24C0 /* ViewModel */,
 				3BFC9B952C0C3E6500583A12 /* Supporting */,
 				3BFC9B682C0C3CA900583A12 /* Preview Content */,
 			);
@@ -248,6 +261,7 @@
 		3BFC9B922C0C3DDD00583A12 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3BEEC6252C133EDD00EB24C0 /* Modifire */,
 				3BFC9B9A2C0C436E00583A12 /* MainTab */,
 			);
 			path = View;
@@ -443,10 +457,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BFC9BA22C0C44DD00583A12 /* StringUtils.swift in Sources */,
+				3BEEC6272C133F0B00EB24C0 /* WidthSetterModifier.swift in Sources */,
 				3BEEC60F2C0F35FA00EB24C0 /* GrokView.swift in Sources */,
 				3BFC9BA52C0C501900583A12 /* HomeView.swift in Sources */,
 				3BEEC61C2C11D78A00EB24C0 /* TestData.swift in Sources */,
 				3BEEC6162C0F44A000EB24C0 /* WhoToFolloewView.swift in Sources */,
+				3BEEC6242C133E1400EB24C0 /* HeaderTabView.swift in Sources */,
 				3BEEC6112C0F360300EB24C0 /* CommunityView.swift in Sources */,
 				3BEEC60B2C0F35E500EB24C0 /* MessageView.swift in Sources */,
 				3BEEC6192C11D6CF00EB24C0 /* WhoToFollowData.swift in Sources */,

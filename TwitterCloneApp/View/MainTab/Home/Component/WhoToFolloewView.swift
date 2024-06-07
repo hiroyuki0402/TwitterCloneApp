@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct WhoToFolloewView: View {
+    // MARK: - プロパティー
+    
     let whoToFollowData: WhoToFollowData
     
+    // MARK: - ボディー
     var body: some View {
         HStack(alignment: .top) {
+            /// ユーザーのアイコン
             userImage()
+            
             VStack(alignment: .leading) {
                 nameArea()
                 messageArea()
@@ -21,22 +26,25 @@ struct WhoToFolloewView: View {
         .padding(.vertical)
         .padding(.horizontal)
     }
-    
-    
+}
+
+// MARK: - コンポーネント
+private extension WhoToFolloewView {
+    ///メッセージエリア
     private func messageArea() -> some View {
         Text(whoToFollowData.message)
     }
     
+    /// ユーザー情報エリア
     private func nameArea() -> some View {
         HStack {
             userInfo()
             Spacer()
             follwButton()
         }
-
     }
     
-    
+    /// ユーザー情報
     private func userInfo() -> some View {
         VStack {
             Text(whoToFollowData.nickName)
@@ -46,6 +54,7 @@ struct WhoToFolloewView: View {
         }
     }
     
+    /// 「フォローする」ボタン
     private func follwButton() -> some View {
         Button {
             
@@ -60,6 +69,7 @@ struct WhoToFolloewView: View {
         }
     }
     
+    /// ユーザーのアイコン
     private func userImage() -> some View {
         let url = URL(string: whoToFollowData.imageUrl) ?? URL(string: "")
         return AsyncImage(url: url) { imagePhase in
@@ -70,10 +80,7 @@ struct WhoToFolloewView: View {
                     .frame(width: 50, height: 50)
                     .clipShape(Circle())
             }
-            
-
         }
-            
     }
 }
 
