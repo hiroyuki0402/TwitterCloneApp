@@ -14,6 +14,8 @@ class HomeViewModel: ObservableObject {
     /// ユーザーがフォローする候補のデータリスト
     @Published var whoToFollowData: WhoToFollowDatas = []
     
+    @Published var followDatas: FollowDatas = []
+    
     /// APIのエンドポイントとなるURL
     private let url = URL(string: "")
     
@@ -45,5 +47,6 @@ private extension HomeViewModel {
     /// テストデータを用いてフォロー候補データを設定
     private func debugTestDatas() {
         whoToFollowData = TestData.whoToFollowTestDatas()
+        followDatas = TestData.followTestDatas()
     }
 }

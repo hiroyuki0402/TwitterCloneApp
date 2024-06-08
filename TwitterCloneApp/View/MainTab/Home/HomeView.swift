@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MyLibrary
 
 struct HomeView: View {
     // MARK: - プロパティー
@@ -21,10 +22,10 @@ struct HomeView: View {
             /// ヘッダーエリア
             headerTabArea()
             
-            LazyVStack {
-                ForEach(homeViewModel.whoToFollowData, id: \.self) { data in
-                    WhoToFolloewView(whoToFollowData: data)
-                }
+            if selectedTab == .follow {
+                FollowView(whoToFollowData: homeViewModel.whoToFollowData)
+            } else if selectedTab == .recommend {
+                RecommendView(followDatas: homeViewModel.followDatas)
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
