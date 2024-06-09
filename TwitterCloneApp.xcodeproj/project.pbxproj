@@ -16,7 +16,6 @@
 		3BEEC6162C0F44A000EB24C0 /* WhoToFolloewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEEC6152C0F44A000EB24C0 /* WhoToFolloewView.swift */; };
 		3BEEC6192C11D6CF00EB24C0 /* WhoToFollowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEEC6182C11D6CF00EB24C0 /* WhoToFollowData.swift */; };
 		3BEEC61C2C11D78A00EB24C0 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEEC61B2C11D78A00EB24C0 /* TestData.swift */; };
-		3BEEC6202C11DA6600EB24C0 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEEC61F2C11DA6600EB24C0 /* MyLibrary */; };
 		3BEEC6222C11DABC00EB24C0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEEC6212C11DABC00EB24C0 /* HomeViewModel.swift */; };
 		3BEEC6242C133E1400EB24C0 /* HeaderTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEEC6232C133E1400EB24C0 /* HeaderTabView.swift */; };
 		3BEEC6272C133F0B00EB24C0 /* WidthSetterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEEC6262C133F0B00EB24C0 /* WidthSetterModifier.swift */; };
@@ -25,6 +24,7 @@
 		3BEEC62F2C14965700EB24C0 /* UserFeedItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEEC62E2C14965700EB24C0 /* UserFeedItemView.swift */; };
 		3BEEC6312C1496C000EB24C0 /* FollowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEEC6302C1496C000EB24C0 /* FollowData.swift */; };
 		3BEEC6342C149B8E00EB24C0 /* StatusItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEEC6332C149B8E00EB24C0 /* StatusItemView.swift */; };
+		3BEEC6372C16662900EB24C0 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEEC6362C16662900EB24C0 /* MyLibrary */; };
 		3BFC9B632C0C3CA800583A12 /* TwitterCloneAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFC9B622C0C3CA800583A12 /* TwitterCloneAppApp.swift */; };
 		3BFC9B672C0C3CA900583A12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BFC9B662C0C3CA900583A12 /* Assets.xcassets */; };
 		3BFC9B6A2C0C3CA900583A12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BFC9B692C0C3CA900583A12 /* Preview Assets.xcassets */; };
@@ -92,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BEEC6202C11DA6600EB24C0 /* MyLibrary in Frameworks */,
+				3BEEC6372C16662900EB24C0 /* MyLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +358,7 @@
 			);
 			name = TwitterCloneApp;
 			packageProductDependencies = (
-				3BEEC61F2C11DA6600EB24C0 /* MyLibrary */,
+				3BEEC6362C16662900EB24C0 /* MyLibrary */,
 			);
 			productName = TwitterCloneApp;
 			productReference = 3BFC9B5F2C0C3CA800583A12 /* TwitterCloneApp.app */;
@@ -433,7 +433,7 @@
 			);
 			mainGroup = 3BFC9B562C0C3CA800583A12;
 			packageReferences = (
-				3BEEC61E2C11DA6500EB24C0 /* XCRemoteSwiftPackageReference "MyLibrary" */,
+				3BEEC6352C16662900EB24C0 /* XCRemoteSwiftPackageReference "MyLibrary" */,
 			);
 			productRefGroup = 3BFC9B602C0C3CA800583A12 /* Products */;
 			projectDirPath = "";
@@ -841,7 +841,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3BEEC61E2C11DA6500EB24C0 /* XCRemoteSwiftPackageReference "MyLibrary" */ = {
+		3BEEC6352C16662900EB24C0 /* XCRemoteSwiftPackageReference "MyLibrary" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hiroyuki0402/MyLibrary";
 			requirement = {
@@ -852,9 +852,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3BEEC61F2C11DA6600EB24C0 /* MyLibrary */ = {
+		3BEEC6362C16662900EB24C0 /* MyLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3BEEC61E2C11DA6500EB24C0 /* XCRemoteSwiftPackageReference "MyLibrary" */;
+			package = 3BEEC6352C16662900EB24C0 /* XCRemoteSwiftPackageReference "MyLibrary" */;
 			productName = MyLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */

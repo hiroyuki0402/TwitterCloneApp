@@ -23,9 +23,10 @@ struct HomeView: View {
             headerTabArea()
             
             if selectedTab == .follow {
-                FollowView(whoToFollowData: homeViewModel.whoToFollowData)
+                FollowView(whoToFollowData: homeViewModel.whoToFollowData, sectionTitle: "Who to follow")
             } else if selectedTab == .recommend {
                 RecommendView(followDatas: homeViewModel.followDatas)
+                FollowView(whoToFollowData: homeViewModel.whoToFollowData, sectionTitle: "Who to follow")
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
