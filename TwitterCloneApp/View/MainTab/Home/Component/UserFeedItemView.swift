@@ -1,16 +1,16 @@
 //
-//  WhoToFolloewView.swift
+//  UserFeedItemView.swift
 //  TwitterCloneApp
 //
-//  Created by SHIRAISHI HIROYUKI on 2024/06/04.
+//  Created by SHIRAISHI HIROYUKI on 2024/06/08.
 //
 
 import SwiftUI
 
-struct WhoToFolloewView: View {
+struct UserFeedItemView: View {
     // MARK: - プロパティー
     
-    let whoToFollowData: WhoToFollowData
+    let followData: FollowData
     
     // MARK: - ボディー
     var body: some View {
@@ -21,6 +21,8 @@ struct WhoToFolloewView: View {
             VStack(alignment: .leading) {
                 nameArea()
                 messageArea()
+                mainImage()
+                StatusItemView()
             }
         }
         .padding(.vertical)
@@ -29,10 +31,10 @@ struct WhoToFolloewView: View {
 }
 
 // MARK: - コンポーネント
-private extension WhoToFolloewView {
+private extension UserFeedItemView {
     ///メッセージエリア
     private func messageArea() -> some View {
-        Text(whoToFollowData.message)
+        Text(followData.message)
     }
     
     /// ユーザー情報エリア
@@ -40,38 +42,34 @@ private extension WhoToFolloewView {
         HStack {
             userInfo()
             Spacer()
-            follwButton()
+            someButton()
         }
     }
     
     /// ユーザー情報
     private func userInfo() -> some View {
         VStack {
-            Text(whoToFollowData.nickName)
+            Text(followData.nickName)
                 .font(.subheadline)
                 .fontWeight(.bold)
-            Text(whoToFollowData.userID)
+            Text(followData.userID)
         }
     }
     
     /// 「フォローする」ボタン
-    private func follwButton() -> some View {
+    private func someButton() -> some View {
         Button {
             
         } label: {
-            Text("フォローする")
-                .font(.subheadline)
+            Text("・・・")
                 .bold()
-                .padding(.horizontal, 20)
-                .padding(.vertical, 10)
-                .background(.black)
-                .clipShape(.capsule)
+                .kerning(-7)
         }
     }
     
     /// ユーザーのアイコン
     private func userImage() -> some View {
-        let url = URL(string: whoToFollowData.imageUrl) ?? URL(string: "")
+        let url = URL(string: followData.imageUrl) ?? URL(string: "")
         return AsyncImage(url: url) { imagePhase in
             if let image = imagePhase.image {
                 image
@@ -82,9 +80,22 @@ private extension WhoToFolloewView {
             }
         }
     }
+    
+    /// メイン画像
+    private func mainImage() -> some View {
+        let url = URL(string: followData.mainImageUrl) ?? URL(string: "")
+        return AsyncImage(url: url) { imagePhase in
+            if let image = imagePhase.image {
+                image
+                    .resizable()
+                    .frame(maxWidth: .infinity, maxHeight: 450)
+                    .scaledToFit()
+            }
+        }
+    }
 }
 
 #Preview {
-    WhoToFolloewView(whoToFollowData: TestData.whoToFollowTestData())
-        .background(.blue)
+    UserFeedItemView(followData: TestData.followTestData())
 }
+
