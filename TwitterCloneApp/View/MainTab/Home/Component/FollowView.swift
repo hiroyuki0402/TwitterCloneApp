@@ -16,7 +16,6 @@ struct FollowView: View {
     
     // MARK: - ボディー
     var body: some View {
-        Divider()
         HStack {
             Text(sectionTitle)
                 .font(.title2)
@@ -46,6 +45,8 @@ struct FollowView: View {
             }
             
         }
+        
+        Divider()
     }
 }
 

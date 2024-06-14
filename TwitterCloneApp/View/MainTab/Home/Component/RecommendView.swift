@@ -16,6 +16,7 @@ struct RecommendView: View {
         LazyVStack {
             ForEach(followDatas, id: \.self) { data in
                 UserFeedItemView(followData: data)
+                Divider()
             }
         }
     }
